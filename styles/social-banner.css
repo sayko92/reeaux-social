@@ -1,0 +1,97 @@
+@import './variables.css';
+
+.hbs-social-banner {
+  width: 100%;
+  background: var(--hbs-background);
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.hbs-container {
+  max-width: var(--hbs-container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hbs-social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hbs-social-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+.hbs-icon-circle {
+  width: var(--hbs-icon-size);
+  height: var(--hbs-icon-size);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.hbs-social-svg {
+  width: var(--hbs-svg-size);
+  height: var(--hbs-svg-size);
+  fill: var(--hbs-text-color);
+}
+
+.hbs-username {
+  color: var(--hbs-text-color);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.hbs-followers {
+  color: var(--hbs-text-color);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Styles spécifiques pour chaque réseau social */
+.hbs-instagram .hbs-icon-circle {
+  background: var(--hbs-instagram-color);
+}
+
+.hbs-snapchat .hbs-icon-circle {
+  background: var(--hbs-snapchat-color);
+}
+
+.hbs-snapchat .hbs-social-svg {
+  fill: var(--hbs-tiktok-color);
+}
+
+.hbs-tiktok .hbs-icon-circle {
+  background: var(--hbs-tiktok-color);
+}
+
+/* Version mobile avec défilement */
+@media (max-width: 768px) {
+  .hbs-container {
+    max-width: none;
+    padding: 0;
+  }
+
+  .hbs-social-icons {
+    display: flex;
+    gap: var(--hbs-gap);
+    padding: 0 var(--hbs-gap);
+    animation: scroll 20s linear infinite;
+    width: max-content;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+}

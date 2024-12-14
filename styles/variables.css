@@ -1,0 +1,11 @@
+:root {
+  --hbs-background: #242424;
+  --hbs-text-color: #FFFFFF;
+  --hbs-instagram-color: #E4405F;
+  --hbs-snapchat-color: #FFFC00;
+  --hbs-tiktok-color: #000000;
+  --hbs-icon-size: 70px;
+  --hbs-svg-size: 35px;
+  --hbs-gap: 40px;
+  --hbs-container-width: 1200px;
+}

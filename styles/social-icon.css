@@ -1,0 +1,56 @@
+@import './variables.css';
+
+.hbs-social-link-92 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+.hbs-icon-circle-92 {
+  width: var(--hbs-icon-size);
+  height: var(--hbs-icon-size);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.hbs-social-svg-92 {
+  width: var(--hbs-svg-size);
+  height: var(--hbs-svg-size);
+  fill: var(--hbs-text-color);
+}
+
+.hbs-username-92 {
+  color: var(--hbs-text-color);
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.hbs-followers-92 {
+  color: var(--hbs-text-color);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Styles spécifiques pour chaque réseau social */
+.hbs-instagram-92 .hbs-icon-circle-92 {
+  background: var(--hbs-instagram-color);
+}
+
+.hbs-snapchat-92 .hbs-icon-circle-92 {
+  background: var(--hbs-snapchat-color);
+}
+.hbs-snapchat-92 .hbs-social-svg-92 {
+  fill: var(--hbs-tiktok-color);
+}
+
+.hbs-tiktok-92 .hbs-icon-circle-92 {
+  background: var(--hbs-tiktok-color);
+}
